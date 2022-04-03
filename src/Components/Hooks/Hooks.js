@@ -11,9 +11,4 @@ const CustomerReviews = () => {
 }
 
 
-const ForThree =() =>{
-    console.log("hello");
-    
-}
-
-export {CustomerReviews,ForThree}
+export {CustomerReviews}

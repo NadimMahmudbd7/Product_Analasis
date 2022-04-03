@@ -29,7 +29,7 @@ const OverView = () => {
             <div className="cutomerThreeRemi">
                 <h1 className='text-3xl text-center font-bold my-10'>Customer Reviews : 3</h1>
             <div className="customerSays grid grid-cols-3">
-                {forThree?.map(review => <ForThreeReview review ={review}></ForThreeReview>)}
+                {forThree?.map(review => <ForThreeReview review ={review} key={review.id}></ForThreeReview>)}
             </div>
             <div className="reviewButton flex justify-center">
             <Link className='px-10 py-1 rounded my-10 flex w-96 justify-center bg-purple-500' to={"/reviews"}>See all reviews </Link>
