@@ -1,12 +1,10 @@
-// import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import { ReviewsContext } from "../../App"
 
-// const CustomerThreeReviews = () => {
-//     const [threeReviews, setThreeReviews] = useState()
-//     useEffect(()=>{
-//         fetch("data.json")
-//         .then(res => res.json())
-//         .then( data => setThreeReviews(data))
-//       },[threeReviews])
-//       return [threeReviews, setThreeReviews]
-// }
-// export {CustomerThreeReviews}
+const CustomerThreeReviews = () => {
+    const [reviews] = useContext(ReviewsContext)
+    if(reviews?.length >3){
+        return reviews.slice(0,3)
+    }
+}
+export {CustomerThreeReviews}

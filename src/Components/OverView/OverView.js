@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { ReviewsContext } from '../../App';
 import { CustomerThreeReviews } from '../CustomerSays/CustomerSays';
-import { CustomerReviews, ForThree } from '../Hooks/Hooks';
+import ForThreeReview from '../ForThreeReview/ForThreeReview';
+import "./Overview.css"
 
 const OverView = () => {
 
-    const [reviews, setReviews] = useContext(ReviewsContext)
+    let forThree = CustomerThreeReviews()
 
-
+    // console.log(forThree);
     return (
         <div className="section">
             <div className='flex justify-evenly my-16'>
@@ -24,8 +26,14 @@ const OverView = () => {
                     <img className='rounded-2xl' src={"smartwatch.jpg"} alt="" />
                 </div>
             </div>
-            <div className="customerSays">
-                
+            <div className="cutomerThreeRemi">
+                <h1 className='text-3xl text-center font-bold my-10'>Customer Reviews : 3</h1>
+            <div className="customerSays grid grid-cols-3">
+                {forThree?.map(review => <ForThreeReview review ={review}></ForThreeReview>)}
+            </div>
+            <div className="reviewButton flex justify-center">
+            <Link className='px-10 py-1 rounded my-10 flex w-96 justify-center bg-purple-500' to={"/reviews"}>See all reviews </Link>
+            </div>
             </div>
         </div>
     );
