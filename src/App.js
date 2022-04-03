@@ -9,7 +9,7 @@ import Dashboard from "./Components/DashBoard/Dashboard"
 import Blog from "./Components/Blog/Blog"
 import About from "./Components/About/About"
 import NotFound from './Components/NotFound/NotFound';
-import CustomerReviews from './Components/Hooks/Hooks';
+import {CustomerReviews} from './Components/Hooks/Hooks';
 
 export const ReviewsContext = createContext()
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomerSays from '../CustomerSays/CustomerSays';
 import "./Review.css"
 
 const Review = ({review}) => {

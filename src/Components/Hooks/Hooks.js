@@ -10,4 +10,10 @@ const CustomerReviews = () => {
       return [reviews, setReviews]
 }
 
-export default CustomerReviews
+
+const ForThree =() =>{
+    console.log("hello");
+    
+}
+
+export {CustomerReviews,ForThree}
