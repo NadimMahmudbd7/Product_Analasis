@@ -1,12 +1,13 @@
 import React from 'react';
+import "./Blog.css"
 
 const Blog = () => {
     return (
         <div>
             <div className="questionAndAnswer">
-                <h2 className="text-center text-4xl my-10 animate__animated wow animate__fadeInDown">Question And Answer</h2>
-                <div className="grid grid-cols-2 gap-20 mx-10">
-                    <div className="bg-white p-10 animate__animated wow animate__fadeInLeft">
+                <h2 className="text-center text-4xl my-10 animate__animated wow animate__fadeInDown title">Question And Answer</h2>
+                <div className="grid grid-cols-2 gap-20 mx-10 questonsAndAnswer">
+                    <div className="bg-white p-10 animate__animated wow animate__fadeInLeft rounded-3xl allquestion">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title text-center mb-3 text-xl">Q1: why use Context Api</h5>
@@ -14,7 +15,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white p-10 animate__animated wow animate__fadeInRight">
+                    <div className="bg-white p-10 animate__animated wow animate__fadeInRight rounded-3xl allquestion">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title text-center mb-3 text-xl">Q2: what is Semantic tag</h5>
