@@ -9,7 +9,7 @@ const Blog = () => {
                     <div className="bg-white p-10 animate__animated wow animate__fadeInLeft">
                         <div className="card">
                             <div className="card-body">
-                                <h5 className="card-title text-center mb-3 text-xl">Q1: why use Contex Api</h5>
+                                <h5 className="card-title text-center mb-3 text-xl">Q1: why use Context Api</h5>
                                 <p className="card-text"> if I have main parent App.js. then App child Component1 and Component1 child Component2. now if i'll send any data from App.js to Component2, then at first App to send Component1 then component1 send to Component2 and Component2 receive this data using props. this is the pain. so if you want send direct data from App to Component2, so we will use Context Api</p>
                             </div>
                         </div>
