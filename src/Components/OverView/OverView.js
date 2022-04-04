@@ -21,7 +21,7 @@ const OverView = () => {
                     </div>
                 </div>
 
-                <div className="image animate__animated wow animate__fadeInRight">
+                <div className="watchImage animate__animated wow animate__fadeInRight">
                     <img className='rounded-2xl' src={"smartwatch.jpg"} alt="" />
                 </div>
             </div>

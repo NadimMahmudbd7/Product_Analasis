@@ -4,7 +4,10 @@
     border-radius: 10px;
 }
 .reviews{
-    box-shadow: 0px 0px 12px inset;
+    border-radius: 10px;
+}
+.watchImage{
+    box-shadow: 6px 10px 10px;
     border-radius: 10px;
 }
 @media screen and (max-width:688px){
@@ -23,5 +26,8 @@
     }
     .seeAllReviews{
         width: 50%;
+    }
+    .reviews{
+        box-shadow: 0px 0px 12px inset;
     }
 }

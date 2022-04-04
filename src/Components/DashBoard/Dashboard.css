@@ -1,0 +1,11 @@
+@media screen and (max-width:688px){
+    .chart{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 40px 0px;
+    }
+    .monthWiseSellChrt{
+        width: 10px;
+        margin: 0;
+    }
+}

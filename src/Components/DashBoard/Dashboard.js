@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Scatter, Tooltip, XAxis, YAxis } from 'recharts';
-
+import "./Dashboard.css"
 
 const Dashboard = () => {
   const [datas, setData] = useState([])
@@ -16,6 +16,7 @@ const Dashboard = () => {
         <div className="title">
           <h1 className='text-xl text-center text-blue-600'>Investment, Sell & Revinew</h1>
           <ComposedChart
+          className='monthWiseSellChrt '
             width={500}
             height={400}
             data={datas}
