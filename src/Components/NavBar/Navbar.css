@@ -15,3 +15,18 @@
     color: #1e90c2;
     transition: color ease-in-out 300ms;
   }
+
+  @media screen and (max-width:688px){
+    .link{
+     font-size: 15px;
+     display: flex;
+     margin: 0px;
+    }
+    .nav{
+      width: 100%;
+    }
+    .leftSide{
+      display: none;
+    }
+
+  }

@@ -1,0 +1,11 @@
+@media screen and (max-width:688px){
+    .reviews{
+        display: gird;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .reviewsText{
+        font-size: 30px;
+    }
+}
